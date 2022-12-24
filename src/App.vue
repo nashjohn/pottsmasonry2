@@ -1,15 +1,18 @@
 <template>
   <nav>
-    <img class="logo" src="@/assets/pottslogo.jpg"/>
+    <img class="logo" src="@/assets/pottslogosm.gif"/>
     <div class="alinks">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> | 
+      <router-link to="/">Home</router-link> | 
+      <router-link to="/services">Services</router-link>
       <router-link to="/gallery">Gallery</router-link> | 
       <router-link to="/contact">Contact</router-link> | 
-      <router-link to="/services">Services</router-link>
+      
     </div>
   </nav>
   <router-view/>
+  <footer>
+    <div id="copyright">&#169; 2023</div>
+  </footer>
 </template>
 
 <style lang="scss">
@@ -43,8 +46,6 @@ nav {
 
   div.alinks {
     align-content: center;
-    margin-right: auto;
-    margin-left: auto;
     display: flex;
     align-items: center;
     text-align: center;
@@ -55,5 +56,13 @@ html {
 }
 body {
   margin: 0px;
+}
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  #copyright {
+    font-size: 11px;
+  }
 }
 </style>
