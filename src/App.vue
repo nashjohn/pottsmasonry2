@@ -2,15 +2,19 @@
   <nav>
     <img class="logo" src="@/assets/pottslogosm.gif"/>
     <div class="alinks">
-      <router-link to="/">Home</router-link> | 
+      <font-awesome-icon icon="fa-solid fa-house-user" />
+      <router-link to="/">Home</router-link>
+      <font-awesome-icon icon="fa-solid fa-trowel-bricks" />
       <router-link to="/services">Services</router-link>
-      <router-link to="/gallery">Gallery</router-link> | 
-      <router-link to="/contact">Contact</router-link> | 
-      
+      <font-awesome-icon icon="fa-solid fa-image" />
+      <router-link to="/gallery">Gallery</router-link>
+      <font-awesome-icon icon="fa-solid fa-address-book" />
+      <router-link to="/contact">Contact</router-link>
     </div>
   </nav>
   <router-view/>
   <footer>
+    <a href="https://www.instagram.com/pottsmasonry/" target="_blank"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
     <div id="copyright">&#169; 2023</div>
   </footer>
 </template>
