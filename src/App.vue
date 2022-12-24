@@ -1,12 +1,15 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> | 
-    <router-link to="/gallery">Gallery</router-link> | 
-    <router-link to="/contact">Contact</router-link> | 
-    <router-link to="/services">Services</router-link> | 
-    <router-link to="/press">Press</router-link> | 
-    <router-link to="/cbovens">CB Ovens</router-link>
+    <img class="logo" src="@/assets/pottslogo.jpg"/>
+    <div class="alinks">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> | 
+      <router-link to="/gallery">Gallery</router-link> | 
+      <router-link to="/contact">Contact</router-link> | 
+      <router-link to="/services">Services</router-link> | 
+      <router-link to="/press">Press</router-link> | 
+      <router-link to="/cbovens">CB Ovens</router-link>
+    </div>
   </nav>
   <router-view/>
 </template>
@@ -21,7 +24,7 @@
 }
 
 nav {
-  padding: 30px;
+  padding: 5px;
 
   a {
     font-weight: bold;
@@ -30,6 +33,20 @@ nav {
     &.router-link-exact-active {
       color: #42b983;
     }
+  }
+  height: 56px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  align-content: center;
+
+  div.alinks {
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
   }
 }
 </style>
