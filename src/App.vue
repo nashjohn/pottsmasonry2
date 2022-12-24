@@ -6,9 +6,7 @@
       <router-link to="/about">About</router-link> | 
       <router-link to="/gallery">Gallery</router-link> | 
       <router-link to="/contact">Contact</router-link> | 
-      <router-link to="/services">Services</router-link> | 
-      <router-link to="/press">Press</router-link> | 
-      <router-link to="/cbovens">CB Ovens</router-link>
+      <router-link to="/services">Services</router-link>
     </div>
   </nav>
   <router-view/>
@@ -24,7 +22,7 @@
 }
 
 nav {
-  padding: 5px;
+  padding: 0.5%;
 
   a {
     font-weight: bold;
@@ -37,8 +35,11 @@ nav {
   height: 56px;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 99%;
   align-content: center;
+  box-shadow: 0px 0.5px 8px -2px #F0F0F0;
+  top: 0px;
+  left: 0px;
 
   div.alinks {
     align-content: center;
@@ -48,5 +49,11 @@ nav {
     align-items: center;
     text-align: center;
   }
+}
+html {
+  padding: 0px;
+}
+body {
+  margin: 0px;
 }
 </style>
