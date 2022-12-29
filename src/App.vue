@@ -2,14 +2,10 @@
   <nav>
     <img class="logo" src="@/assets/pottslogosm.gif"/>
     <div class="alinks">
-      <font-awesome-icon icon="fa-solid fa-house-user" />
-      <router-link to="/">Home</router-link>
-      <font-awesome-icon icon="fa-solid fa-trowel-bricks" />
-      <router-link to="/services">Services</router-link>
-      <font-awesome-icon icon="fa-solid fa-image" />
-      <router-link to="/gallery">Gallery</router-link>
-      <font-awesome-icon icon="fa-solid fa-address-book" />
-      <router-link to="/contact">Contact</router-link>
+      <router-link to="/">HOME</router-link>&nbsp;&nbsp;
+      <router-link to="/services">SERVICES</router-link>&nbsp;&nbsp;
+      <router-link to="/gallery">GALLERY</router-link>&nbsp;&nbsp;
+      <router-link to="/contact">CONTACT</router-link>&nbsp;&nbsp;
     </div>
   </nav>
   <router-view/>
@@ -21,7 +17,7 @@
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -32,11 +28,12 @@ nav {
   padding: 0.5%;
 
   a {
-    font-weight: bold;
-    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 300;
+    color: #004a8d;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #d31144;
     }
   }
   height: 56px;
@@ -53,6 +50,9 @@ nav {
     display: flex;
     align-items: center;
     text-align: center;
+    width: 100vw;
+    justify-content: center;
+    margin-left: -90px;
   }
 }
 html {
@@ -68,5 +68,10 @@ footer {
   #copyright {
     font-size: 11px;
   }
+  background-color:#d31144;
+  color:#F0F0F0;
+}
+img.logo {
+  float: left;
 }
 </style>
