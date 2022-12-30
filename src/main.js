@@ -20,5 +20,6 @@ library.add(faTrowelBricks)
 library.add(faImage)
 library.add(faAddressBook)
 library.add(faBars)
+library.add()
 
 createApp(App).use(store).use(router).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
