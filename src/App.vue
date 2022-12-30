@@ -85,6 +85,7 @@ footer {
 }
 img.logo {
   float: left;
+  margin: 10px;
 }
 @media only screen and (max-width: 600px) {
   nav div.alinks {
