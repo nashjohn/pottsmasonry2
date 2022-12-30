@@ -7,7 +7,10 @@
       <router-link to="/gallery">GALLERY</router-link>&nbsp;&nbsp;
       <router-link to="/contact">CONTACT</router-link>&nbsp;&nbsp;
     </div>
-    <div class="menubars"><p>MENU</p></div>
+    <div class="menubars">
+      <p>Menu</p>
+      <font-awesome-icon icon="fa-solid fa-block-brick" />
+    </div>
   </nav>
   <router-view/>
   <footer>
@@ -93,7 +96,9 @@ img.logo {
   position: absolute;
   right: 0;
   margin-right:15px;
-  font-size: 25px;
+  font-size: 15px;
+  color:#004a8d;
+  font-weight: 200;
 }
 }
 @media only screen and (min-width: 600px) {
