@@ -7,10 +7,12 @@
       <router-link to="/gallery">GALLERY</router-link>&nbsp;&nbsp;
       <router-link to="/contact">CONTACT</router-link>&nbsp;&nbsp;
     </div>
+    <div class="menubars"><p>MENU</p></div>
   </nav>
   <router-view/>
   <footer>
-    <a href="https://www.instagram.com/pottsmasonry/" target="_blank"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
+    <h3>Follow us</h3>
+    <a class="insta" href="https://www.instagram.com/pottsmasonry/" target="_blank"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
     <div id="copyright">&#169; 2023</div>
   </footer>
 </template>
@@ -68,10 +70,41 @@ footer {
   #copyright {
     font-size: 11px;
   }
-  background-color:#d31144;
-  color:#F0F0F0;
+  background-color:#F0F0F0;
+  color:#d31144;
+  a.insta {
+    font-size: 25px;
+    color:#2c3e50;
+  }
+  h3 {
+    margin-bottom: 0;
+  }
 }
 img.logo {
   float: left;
 }
+@media only screen and (max-width: 600px) {
+  nav div.alinks {
+    display: none;
+    margin-right: -10000;
+  }
+  div.menubars {
+  float:right;
+  position: absolute;
+  right: 0;
+  margin-right:15px;
+  font-size: 25px;
+}
+}
+@media only screen and (min-width: 600px) {
+  div.menubars {
+  float:right;
+  position: absolute;
+  right: 0;
+  margin-right:15px;
+  font-size: 25px;
+  display: none;
+}
+}
+
 </style>
