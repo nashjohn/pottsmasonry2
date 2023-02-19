@@ -1,4 +1,10 @@
 <template>
+  <div class="mobilemen" v-if="seen">
+      <router-link v-on:click="seen = !seen" to="/">HOME</router-link>
+      <router-link v-on:click="seen = !seen" to="/services">SERVICES</router-link>
+      <router-link v-on:click="seen = !seen" to="/gallery">GALLERY</router-link>
+      <router-link v-on:click="seen = !seen" to="/contact">CONTACT</router-link>
+  </div>
   <nav>
     <img class="logo" src="@/assets/pottslogosm.gif"/>
     <div class="alinks">
@@ -8,17 +14,27 @@
       <router-link to="/contact">CONTACT</router-link>&nbsp;&nbsp;
     </div>
     <div class="menubars">
-      <p>Menu</p>
+      <p v-on:click="seen = !seen">Menu</p>
       <font-awesome-icon icon="fa-solid fa-block-brick" />
     </div>
   </nav>
   <router-view/>
   <footer>
-    <h3>Follow us</h3>
     <a class="insta" href="https://www.instagram.com/pottsmasonry/" target="_blank"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
     <div id="copyright">&#169; 2023</div>
   </footer>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      seen: false
+      }
+  }
+}
+</script>
+
 
 <style lang="scss">
 #app {
@@ -44,7 +60,7 @@ nav {
   height: 56px;
   display: flex;
   align-items: center;
-  width: 99%;
+  width: 100%;
   align-content: center;
   box-shadow: 0px 0.5px 8px -2px #F0F0F0;
   top: 0px;
@@ -73,7 +89,7 @@ footer {
   #copyright {
     font-size: 11px;
   }
-  background-color:#F0F0F0;
+  background-color:none;
   color:#d31144;
   a.insta {
     font-size: 25px;
@@ -101,6 +117,21 @@ img.logo {
   color:#004a8d;
   font-weight: 200;
 }
+  div.mobilemen {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f0f0f0;
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    gap: 45px;
+    z-index: 100;
+  } 
+  .follow {
+    display:none;
+  }
 }
 @media only screen and (min-width: 600px) {
   div.menubars {
