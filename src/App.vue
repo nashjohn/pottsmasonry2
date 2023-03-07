@@ -83,7 +83,7 @@ body {
   margin: 0px;
 }
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0px;
   width: 100vw;
   #copyright {

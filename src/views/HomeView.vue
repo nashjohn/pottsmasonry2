@@ -21,7 +21,7 @@
 
 .ant-carousel :deep(.slick-slide) {
   text-align: center;
-  height: 80vh;
+  height: 100vh;
   line-height: 160px;
   background: blue;
   overflow: hidden;
